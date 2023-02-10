@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+     {% if 'инженер' in profession or 'строитель' in profession %}
+            <div style="margin:0px auto; text-align:center;">
+                <h2>Научные симуляторы</h2>
+                <img src="/static/img/science.jpg" height="30%" width="30%" alt="здесь должна была быть картинка, но не нашлась">
+            </div>
+     {% else %}
+            <div style="margin:0px auto; text-align:center;">
+                <h2>Научные симуляторы</h2>
+                <img src="/static/img/inj.jpg" height="30%" width="30%" alt="здесь должна была быть картинка, но не нашлась">
+            </div>
+     {% endif %}
+{% endblock %}
